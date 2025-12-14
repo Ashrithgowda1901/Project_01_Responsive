@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+html,body{
+    min-height: 100vh;    
+}
+/* index.css or App.css */
+.hide-scrollbar::-webkit-scrollbar {
+    display: none; /* Chrome, Brave, Edge, Safari */
+  }
+  .hide-scrollbar {
+    -ms-overflow-style: none;  /* IE/old Edge */
+    scrollbar-width: none;     /* Firefox */
+  }
+
+/* Hide scrollbar for Chrome, Brave, Edge, Safari */
+html::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE/old Edge + Firefox */
+  html {
+    -ms-overflow-style: none;  /* IE/Edge legacy */
+    scrollbar-width: none;     /* Firefox */
+    overflow-y: auto;          /* ensure vertical scroll works */
+  }
